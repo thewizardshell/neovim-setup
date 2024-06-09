@@ -1,4 +1,3 @@
-# NEOVIM / LAZYVIM💤
 ![wallpaper](https://github.com/vicenteroa/neovim-setup/assets/79950811/6ed7f00a-faf4-4465-b335-1ae3472d9100)
 
 ## Instalación
