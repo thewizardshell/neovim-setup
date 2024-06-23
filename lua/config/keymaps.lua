@@ -6,3 +6,4 @@ local map = vim.api.nvim_set_keymap
 local options = { noremap = true, silent = true }
 
 map('n', '<leader>G', '<cmd>Telescope live_grep<CR>', options)
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })

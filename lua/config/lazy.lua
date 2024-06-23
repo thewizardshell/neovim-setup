@@ -40,6 +40,12 @@ require("lazy").setup({
           keyword = { italic = true, bold = true },
           functioncall = { italic = true },
           type = { italic = true },
+          -- options = {
+          --   transparency = true,
+          --   lualine_transparency = true,
+          --   terminal_colors = true,
+          --   highligth_inactive_windows = true,
+          -- },
         })
       end,
     },
