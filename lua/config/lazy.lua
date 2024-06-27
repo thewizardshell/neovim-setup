@@ -23,13 +23,6 @@ require("lazy").setup({
       "tjdevries/colorbuddy.vim",
     },
     {
-      -- Theme Andromeda
-      "nobbmaestro/nvim-andromeda",
-      config = function()
-        require("andromeda").setup()
-      end,
-    },
-    {
       -- Theme Onedark
       "olimorris/onedarkpro.nvim",
       config = function()
