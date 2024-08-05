@@ -1,4 +1,4 @@
-![wallpaper](https://github.com/vicenteroa/neovim-setup/assets/79950811/6ed7f00a-faf4-4465-b335-1ae3472d9100)
+![image](https://github.com/user-attachments/assets/1aef4745-1d16-4182-af76-c6ea90a4ea2f)
 
 ## Instalación
 
@@ -42,4 +42,4 @@ git clone https://github.com/vicenteroa/neovim-setup $env:LOCALAPPDATA\nvim
  ```powershell
 nvim
  ```
-LISTO👽Disfruta!
+LISTO🐉Disfruta!
