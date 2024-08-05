@@ -107,6 +107,7 @@ return {
         end,
         -- Specify * to use this function as a fallback for any server
         -- ["*"] = function(server, opts) end,
+        priority = 1000,
       },
     },
   },

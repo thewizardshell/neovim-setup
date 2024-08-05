@@ -1,3 +1,18 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-vim.cmd([[colorscheme onedark_vivid]])
+-- vim.env.PATH = vim.env.PATH .. ":/mnt/c/Program Files/nodejs/"
+-- Ajusta la configuración del color de fondo para evitar el parpadeo
+-- require("telescope").setup({
+--   defaults = {
+--     -- Usa el diseño vertical
+--     layout_strategy = "vertical",
+--     layout_config = {
+--       vertical = {
+--         mirror = true, -- Cambia a `true` para que la ventana de resultados esté en la parte superior
+--         prompt_position = "top", -- Posiciona el prompt en la parte superior
+--         preview_height = 0.5, -- Ajusta la altura de la vista previa (puedes cambiar este valor)
+--         results_height = 0.5, -- Ajusta la altura de los resultados (puedes cambiar este valor)
+--       },
+--     },
+--   },
+-- })
