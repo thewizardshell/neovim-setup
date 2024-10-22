@@ -1,45 +1,54 @@
-![image](https://github.com/user-attachments/assets/1aef4745-1d16-4182-af76-c6ea90a4ea2f)
+![504_1x_shots_so](https://github.com/user-attachments/assets/9b653d55-7855-4700-82b9-e26789cab8d1)
 
-## Instalación
 
-Para instalar LazyVim en Windows, sigue estos pasos:
+## Instalación de mi neovim-setup en Windows
+---
 
-1. **Configura Chocolatey:** 
-Chocolatey es un administrador de paquetes para Windows que facilita la instalación, actualización y gestión de software. Utilizamos Chocolatey para instalar las herramientas necesarias para LazyVim de manera rápida y sencilla.
+> **🔍 Nota:** Si te interesa ver cómo he configurado mis Dotfiles, puedes revisarlos en mi [repositorio de Dotfiles](https://github.com/vicenteroa/Dotfiles). ¡Ahí encontrarás todas las configuraciones y scripts adicionales que utilizo para mi entorno de desarrollo! 🚀
 
-   - Abre PowerShell como administrador.
-   - Ejecuta el siguiente comando:
-     ```powershell
-     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-     ```
+## Antes de comenzar, asegúrate de tener lo siguiente:
 
-3. **Instala las herramientas necesarias con Chocolatey:**
-   - Ejecuta los siguientes comandos:
-     ```powershell
-     choco install neovim
-      ```
-     ```powershell
-      choco install ripgrep
-     ```
-     ```powershell
-     choco install fd
-      ```
-      ```powershell
-     choco install lazygit
-     ```
+- Windows: El sistema operativo donde realizarás la instalación.
+- WSL (Windows Subsystem for Linux): Asegúrate de tener WSL habilitado. Para instalarlo, abre PowerShell como administrador y ejecuta el siguiente comando:
 
-4. **Prepara el entorno de Neovim:**
-   - Mueve las carpetas necesarias:
-     ```powershell
-     Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
-     Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
-     ```
-5. **Clona este repositorio:**
- ```powershell
+- powershell
+
+```powershell
+wsl --install
+```
+Reinicia tu computadora si es necesario.
+
+- Distribución de Linux: Instala una distribución de Linux desde la Microsoft Store (por ejemplo, Ubuntu).
+
+- PowerShell: Preinstalado en Windows, lo necesitarás para ejecutar los comandos.
+
+- Neovim: Asegúrate de tener una versión de Neovim compatible.
+  
+- Git: Instalado en tu sistema para clonar el repositorio.
+  
+### 🗂️ Paso 2: Prepara el entorno de Neovim
+Asegúrate de que Neovim esté listo:
+
+- Renombra las carpetas anteriores (si existen):
+  ```powershell
+  Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
+  Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
+  ```
+
+### 🌀 Paso 4: Clona el repositorio
+Clona tu configuración personalizada directamente en el directorio adecuado:
+
+```powershell
 git clone https://github.com/vicenteroa/neovim-setup $env:LOCALAPPDATA\nvim
- ```
-6. **Inicia mi setup:**
- ```powershell
+```
+
+### 🚀 Paso 5: ¡Inicia !
+Lanza Neovim con tu configuración personalizada:
+
+```powershell
 nvim
- ```
-LISTO🐉Disfruta!
+```
+
+¡Listo! 🏯 ¡Disfruta de tu nuevo entorno de desarrollo con DracoDen!
+
+---
