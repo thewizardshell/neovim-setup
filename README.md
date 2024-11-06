@@ -1,9 +1,9 @@
 ![504_1x_shots_so](https://github.com/user-attachments/assets/9b653d55-7855-4700-82b9-e26789cab8d1)
 
 ---
-
 # Instalación de mi configuración de Neovim en WSL Ubuntu
 
+---
 > **🔍 Nota:** Si te interesa ver cómo he configurado mis Dotfiles, puedes revisarlos en mi [repositorio de Dotfiles](https://github.com/vicenteroa/Dotfiles). ¡Ahí encontrarás todas las configuraciones y scripts adicionales que utilizo para mi entorno de desarrollo! 🚀
 
 ## Requisitos previos
@@ -12,9 +12,22 @@
 2. **WSL (Windows Subsystem for Linux):** Asegúrate de tener WSL habilitado.
 3. **Distribución de Linux:** Instala una distribución de Linux desde la Microsoft Store (por ejemplo, Ubuntu).
 4. **PowerShell:** Preinstalado en Windows, lo necesitarás para ejecutar los comandos.
-5. **Neovim:** Asegúrate de tener una versión de Neovim compatible (recomendado: Neovim 0.8 o superior).
+5. **Neovim:** Asegúrate de tener una versión de Neovim compatible (recomendado: Neovim 0.9 o superior).
 6. **Git:** Instalado en tu sistema para clonar el repositorio.
 7. **Terminal recomendada:** WezTerm o Alacritty (instalados en el sistema operativo Windows, no en WSL) para una mejor experiencia con Neovim.
+
+## Dependencias necesarias
+
+Asegúrate de instalar estas herramientas con `sudo apt` , `brew` o cualquier herramienta que estes utilizando y te permita instalar los siguente:
+
+- **fzf**: `sudo apt install fzf` o `brew install fzf`
+- **fd-find**: `sudo apt install fd-find` o `brew install fd`
+- **ripgrep**: `sudo apt install ripgrep` o `brew install ripgrep`
+- **bat**: `sudo apt install bat` o `brew install bat`
+- **git**: `sudo apt install git` o `brew install git`
+- **gcc**: `sudo apt install gcc` o `brew install gcc`
+- **curl**: `sudo apt install curl` o `brew install curl`
+- **lazygit**: `sudo apt install lazygit` o `brew install lazygit`
 
 ## A considerar:
 
@@ -97,7 +110,7 @@ nvim
 
 ### Fondo de pantalla recomendado
 
-> **🎨 Recomendación de personalización:** Para complementar el estilo de tu configuración de Neovim, puedes usar el fondo de pantalla animado que tengo en mi escritorio mediante **Wallpaper Engine**. Esto ayuda a darle un toque visual atractivo a tu entorno de desarrollo.
+🎨 Recomendación de personalización:** Para complementar el estilo de tu configuración de Neovim, puedes usar el fondo de pantalla animado que tengo en mi escritorio mediante **Wallpaper Engine**. Esto ayuda a darle un toque visual atractivo a tu entorno de desarrollo.
 
 #### Instrucciones para aplicar el fondo de pantalla
 
