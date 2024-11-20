@@ -5,7 +5,6 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
         astro = {},
       },
     },
@@ -17,7 +16,7 @@ return {
         opts.formatters_by_ft = opts.formatters_by_ft or {}
         opts.formatters_by_ft.astro = { "prettier" }
       end
-    end
+    end,
   },
   {
     "neovim/nvim-lspconfig",
@@ -38,5 +37,5 @@ return {
         },
       })
     end,
-  }
+  },
 }
