@@ -1,6 +1,12 @@
 return {
   "nvim-telescope/telescope.nvim",
-  requires = { { "nvim-lua/plenary.nvim" } }, -- Dependencia requerida por Telescope
+  requires = {
+    { "nvim-lua/plenary.nvim" }, -- Dependencia requerida por Telescope
+    {
+      "nvim-telescope/telescope-fzf-native.nvim",
+      run = "make", -- Asegura que la extensión se compile
+    },
+  },
 
   config = function()
     local telescope = require("telescope")
@@ -8,7 +14,6 @@ return {
     -- Configuración básica de Telescope
     telescope.setup({
       defaults = {
-        -- Configuraciones generales
         vimgrep_arguments = {
           "rg",
           "--color=never",
@@ -55,14 +60,15 @@ return {
 
       extensions = {
         fzf = {
-          fuzzy = true, -- false will only do exact matching
-          override_generic_sorter = false, -- override the generic sorter
-          override_file_sorter = true, -- override the file sorter
-          case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+          fuzzy = true, -- Permite coincidencias difusas
+          override_generic_sorter = false, -- No sobrecarga el clasificador genérico
+          override_file_sorter = true, -- Sobrescribe el clasificador de archivos
+          case_mode = "smart_case", -- Opciones de modo de mayúsculas/minúsculas
         },
       },
     })
 
+    -- Cargar la extensión fzf
     telescope.load_extension("fzf")
   end,
 }
