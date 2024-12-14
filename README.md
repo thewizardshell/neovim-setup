@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/Dotfiles-Vicente%20Roa-blue?style=flat-square&logo=neovim&logoColor=blue" />
   </a>
 </p>
----
+
 # Instalación de mi configuración de Neovim en WSL Ubuntu
 
 ---
