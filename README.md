@@ -1,5 +1,15 @@
 ![504_1x_shots_so](https://github.com/user-attachments/assets/9b653d55-7855-4700-82b9-e26789cab8d1)
-
+<p align="center">
+  <a href="https://dotfyle.com/vicenteroa/neovim-setup">
+    <img src="https://dotfyle.com/vicenteroa/neovim-setup/badges/plugins?style=flat" />
+  </a>
+  <a href="https://dotfyle.com/vicenteroa/neovim-setup">
+    <img src="https://dotfyle.com/vicenteroa/neovim-setup/badges/plugin-manager?style=flat" />
+  </a>
+  <a href="https://github.com/vicenteroa/Dotfiles">
+    <img src="https://img.shields.io/badge/Dotfiles-Vicente%20Roa-blue?style=flat-square&logo=neovim&logoColor=blue" />
+  </a>
+</p>
 ---
 # Instalación de mi configuración de Neovim en WSL Ubuntu
 
