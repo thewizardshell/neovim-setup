@@ -24,3 +24,7 @@ vim.keymap.set("n", "<leader>ol", "<cmd>ObsidianLinks<CR>", { desc = "Show Obsid
 vim.keymap.set("n", "<leader>on", "<cmd>ObsidianNew<CR>", { desc = "Create New Note" })
 vim.keymap.set("n", "<leader>os", "<cmd>ObsidianSearch<CR>", { desc = "Search Obsidian" })
 vim.keymap.set("n", "<leader>oq", "<cmd>ObsidianQuickSwitch<CR>", { desc = "Quick Switch" })
+
+-- Minty
+vim.keymap.set("n", "<leader>cps", "<cmd>Shades<CR>", { desc = "Aplicar Shades" })
+vim.keymap.set("n", "<leader>cph", "<cmd>Huefy<CR>", { desc = "Aplicar Huefy" })
