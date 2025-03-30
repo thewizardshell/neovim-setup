@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/28a01a2e-7bd5-4ea9-b7c2-e685c4d77c13)
+![image](https://github.com/user-attachments/assets/fdb03b90-f936-4b87-9e15-c3a36199e1a8)
 
 <p align="center">
   <a href="https://dotfyle.com/vicenteroa/neovim-setup">
