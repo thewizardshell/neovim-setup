@@ -1,4 +1,5 @@
-![504_1x_shots_so](https://github.com/user-attachments/assets/9b653d55-7855-4700-82b9-e26789cab8d1)
+![image](https://github.com/user-attachments/assets/28a01a2e-7bd5-4ea9-b7c2-e685c4d77c13)
+
 <p align="center">
   <a href="https://dotfyle.com/vicenteroa/neovim-setup">
     <img src="https://dotfyle.com/vicenteroa/neovim-setup/badges/plugins?style=flat" />
@@ -12,7 +13,7 @@
 </p>
 
 # Instalación de mi configuración de Neovim en WSL Ubuntu
-
+Ultima Actualización : 30/03/2025
 ---
 > **🔍 Nota:** Si te interesa ver cómo he configurado mis Dotfiles, puedes revisarlos en mi [repositorio de Dotfiles](https://github.com/vicenteroa/Dotfiles). ¡Ahí encontrarás todas las configuraciones y scripts adicionales que utilizo para mi entorno de desarrollo! 🚀
 
