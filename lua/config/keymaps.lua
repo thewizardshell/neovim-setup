@@ -28,3 +28,6 @@ vim.keymap.set("n", "<leader>oq", "<cmd>ObsidianQuickSwitch<CR>", { desc = "Quic
 -- Minty
 vim.keymap.set("n", "<leader>cps", "<cmd>Shades<CR>", { desc = "Aplicar Shades" })
 vim.keymap.set("n", "<leader>cph", "<cmd>Huefy<CR>", { desc = "Aplicar Huefy" })
+
+-- LazyDocker
+-- vim.keymap.set("n", "<leader>D", "<cmd>LazyDocker<CR>", { desc = "Toggle LazyDocker", noremap = true, silent = true, })
