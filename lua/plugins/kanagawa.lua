@@ -1,30 +1,75 @@
 return {
-  "rebelot/kanagawa.nvim",
-  config = function()
-    require("kanagawa").setup({
-      compile = true, -- Habilita la compilación del esquema de colores
-      undercurl = true, -- Habilita undercurls
-      commentStyle = { italic = true },
-      functionStyle = {},
-      keywordStyle = { italic = true },
-      statementStyle = { bold = true },
-      typeStyle = {},
-      transparent = true, -- No establecer color de fondo
-      dimInactive = true, -- Atenuar ventana inactiva `:h hl-NormalNC`
-      terminalColors = true, -- Definir vim.g.terminal_color_{0,17}
-      colors = { -- Agregar/modificar colores de tema y paleta
-        palette = {},
-        theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
-      },
-      overrides = function(colors) -- Agregar/modificar destacados
-        return {}
-      end,
-      theme = "wave", -- Cargar tema "wave" cuando la opción 'background' no está configurada
-      background = { -- Mapear el valor de la opción 'background' a un tema
-        dark = "wave", -- Intenta "dragon"!
-        light = "wave",
-      },
-    })
-    -- vim.cmd("colorscheme kanagawa-wave")
-  end,
+  -- Kanagawa Theme
+  {
+    "rebelot/kanagawa.nvim",
+    config = function()
+      require("kanagawa").setup({
+        compile = true,
+        undercurl = true,
+        commentStyle = { italic = true },
+        keywordStyle = { italic = true },
+        statementStyle = { bold = true },
+        transparent = true, -- Habilita la transparencia en el tema
+        dimInactive = true,
+        terminalColors = true,
+        overrides = function(colors)
+          return {
+            Normal = { bg = "NONE" },
+            NormalNC = { bg = "NONE" },
+            NormalFloat = { bg = "NONE" },
+            SignColumn = { bg = "NONE" },
+            VertSplit = { bg = "NONE" },
+            EndOfBuffer = { bg = "NONE" },
+            LineNr = { bg = "NONE" },
+            CursorLineNr = { bg = "NONE" },
+            Pmenu = { bg = "NONE" },
+            PmenuSel = { bg = "NONE" },
+          }
+        end,
+        theme = "wave",
+        background = { dark = "wave", light = "wave" },
+      })
+      vim.cmd("colorscheme kanagawa-wave")
+    end,
+  },
+
+  -- Transparent.nvim para reforzar la transparencia
+  {
+    "xiyaowong/transparent.nvim",
+    config = function()
+      require("transparent").setup({
+        enable = true,
+        extra_groups = { -- Grupos que se vuelven transparentes
+          "Normal",
+          "NormalNC",
+          "Comment",
+          "Constant",
+          "Special",
+          "Identifier",
+          "Statement",
+          "PreProc",
+          "Type",
+          "Underlined",
+          "Todo",
+          "String",
+          "Function",
+          "Conditional",
+          "Repeat",
+          "Operator",
+          "Structure",
+          "LineNr",
+          "NonText",
+          "SignColumn",
+          "CursorLineNr",
+          "EndOfBuffer",
+          "Pmenu",
+          "PmenuSel",
+          "NormalFloat",
+          "FloatBorder",
+        },
+        exclude = {}, -- No excluye ningún grupo
+      })
+      vim.cmd("TransparentEnable") -- Activa la transparencia
+    end,
+  },
 }
