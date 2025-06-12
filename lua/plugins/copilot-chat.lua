@@ -21,11 +21,12 @@ local prompts = {
   Concise = "Please rewrite the following text to make it more concise.",
 }
 
--- Return plugin configuration
 return {
-  -- Copilot Chat plugin configuration
   {
+    -- Copilot Chat plugin configuration
     "CopilotC-Nvim/CopilotChat.nvim",
+    branch = "main",
+    cmd = "CopilotChat",
     opts = {
       prompts = prompts,
       system_prompt = [[
@@ -35,10 +36,95 @@ return {
         que explique conceptos técnicos con ejemplos prácticos, estructure las respuestas cuando sea necesario y sume algo de humor sutil. dale que va.
         al incluir código, evitá numerar las líneas y que cualquier comentario esté en inglés.
       ]],
-      model = "gpt-4o",
-      answer_header = "vctroa",
+      answer_header = "Copilot",
+      auto_insert_mode = true,
       window = {
-        layout = "float",
+        layout = "horizontal",
+      },
+      mappings = {
+        complete = {
+          insert = "<Tab>",
+        },
+        close = {
+          normal = "q",
+          insert = "<C-c>",
+        },
+        reset = {
+          normal = "<C-l>",
+          insert = "<C-l>",
+        },
+        submit_prompt = {
+          normal = "<CR>",
+          insert = "<C-s>",
+        },
+        toggle_sticky = {
+          normal = "grr",
+        },
+        clear_stickies = {
+          normal = "grx",
+        },
+        accept_diff = {
+          normal = "<C-y>",
+          insert = "<C-y>",
+        },
+        jump_to_diff = {
+          normal = "gj",
+        },
+        quickfix_answers = {
+          normal = "gqa",
+        },
+        quickfix_diffs = {
+          normal = "gqd",
+        },
+        yank_diff = {
+          normal = "gy",
+          register = '"', -- Default register to use for yanking
+        },
+        show_diff = {
+          normal = "gd",
+          full_diff = false, -- Show full diff instead of unified diff when showing diff window
+        },
+        show_info = {
+          normal = "gi",
+        },
+        show_context = {
+          normal = "gc",
+        },
+        show_help = {
+          normal = "gh",
+        },
+      },
+    },
+    config = function(_, opts)
+      local chat = require("CopilotChat")
+
+      vim.api.nvim_create_autocmd("BufEnter", {
+        pattern = "copilot-chat",
+        callback = function()
+          vim.opt_local.relativenumber = true
+          vim.opt_local.number = false
+        end,
+      })
+
+      chat.setup(opts)
+    end,
+  },
+  -- Blink integration
+  {
+    "saghen/blink.cmp",
+    optional = true,
+    ---@module 'blink.cmp'
+    ---@type blink.cmp.Config
+    opts = {
+      sources = {
+        providers = {
+          path = {
+            -- Path sources triggered by "/" interfere with CopilotChat commands
+            enabled = function()
+              return vim.bo.filetype ~= "copilot-chat"
+            end,
+          },
+        },
       },
     },
   },
