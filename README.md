@@ -1,19 +1,12 @@
 ![image](https://github.com/user-attachments/assets/8d4b1de9-38e2-4ee0-b125-d0a279f71ce0)
 
 <p align="center">
-  <a href="https://dotfyle.com/vicenteroa/neovim-setup">
-    <img src="https://dotfyle.com/vicenteroa/neovim-setup/badges/plugins?style=flat" />
-  </a>
-  <a href="https://dotfyle.com/vicenteroa/neovim-setup">
-    <img src="https://dotfyle.com/vicenteroa/neovim-setup/badges/plugin-manager?style=flat" />
-  </a>
-  <a href="https://github.com/vicenteroa/Dotfiles">
-    <img src="https://img.shields.io/badge/Dotfiles-Vicente%20Roa-blue?style=flat-square&logo=neovim&logoColor=blue" />
-  </a>
+<a href="https://dotfyle.com/thewizardshell/neovim-setup"><img src="https://dotfyle.com/thewizardshell/neovim-setup/badges/plugins?style=flat" /></a>
+<a href="https://dotfyle.com/thewizardshell/neovim-setup"><img src="https://dotfyle.com/thewizardshell/neovim-setup/badges/plugin-manager?style=flat" /></a>
 </p>
 
 # Instalación de mi configuración de Neovim en WSL Ubuntu
-Ultima Actualización : 30/03/2025
+Ultima Actualización : 27/07/2025
 ---
 > **🔍 Nota:** Si te interesa ver cómo he configurado mis Dotfiles, puedes revisarlos en mi [repositorio de Dotfiles](https://github.com/vicenteroa/Dotfiles). ¡Ahí encontrarás todas las configuraciones y scripts adicionales que utilizo para mi entorno de desarrollo! 🚀
 
