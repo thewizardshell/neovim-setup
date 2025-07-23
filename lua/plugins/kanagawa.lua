@@ -29,7 +29,7 @@ return {
         theme = "wave",
         background = { dark = "wave", light = "wave" },
       })
-      vim.cmd("colorscheme kanagawa-wave")
+      vim.cmd("colorscheme kanagawa-dragon")
     end,
   },
 

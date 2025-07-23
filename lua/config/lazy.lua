@@ -54,7 +54,7 @@ require("lazy").setup({
     -- version = "*", -- try installing the latest stable version for plugins that support semver
     -- version
   },
-  install = { colorscheme = { "kanagawa-wave" } },
+  install = { colorscheme = { "kanagawa-dragon" } },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {
