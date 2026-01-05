@@ -1,14 +1,21 @@
 return {
-  "iamcco/markdown-preview.nvim",
-  cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-  ft = { "markdown" },
-  -- build = function()
-  --   -- Asegúrate de tener `npm` o `yarn` en el PATH
-  --   vim.fn.system("cd ~/.local/share/nvim/lazy/markdown-preview.nvim && npm install")
-  -- end,
-  config = function()
-    vim.g.mkdp_auto_start = 1 -- Inicia automáticamente la previsualización al abrir un archivo .md
-    vim.g.mkdp_auto_close = 1 -- Cierra la previsualización al salir de un buffer .md
-    vim.g.mkdp_refresh_slow = 0 -- Refresca rápidamente al guardar el archivo
-  end,
+  "MeanderingProgrammer/render-markdown.nvim",
+  dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-mini/mini.nvim" }, -- if you use the mini.nvim suite
+  ---@module 'render-markdown'
+  ---@type render.md.UserConfig
+  opts = {
+    heading = {
+      enabled = true,
+      sign = true,
+      style = "full",
+      icons = { "① ", "② ", "③ ", "④ ", "⑤ ", "⑥ " },
+      left_pad = 1,
+    },
+    bullet = {
+      enabled = true,
+      icons = { "●", "○", "◆", "◇" },
+      right_pad = 1,
+      highlight = "render-markdownBullet",
+    },
+  },
 }

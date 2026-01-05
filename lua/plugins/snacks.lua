@@ -141,6 +141,12 @@ return {
       mode = { "n", "t" },
     },
     {
+      "<leader>pk",
+      function()
+        Snacks.picker()
+      end,
+    },
+    {
       "<leader>N",
       desc = "Neovim News",
       function()

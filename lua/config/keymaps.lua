@@ -29,5 +29,12 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 vim.keymap.set("n", "<leader>cps", "<cmd>Shades<CR>", { desc = "Aplicar Shades" })
 vim.keymap.set("n", "<leader>cph", "<cmd>Huefy<CR>", { desc = "Aplicar Huefy" })
 
+-- CodeCompanion Keymaps
+vim.keymap.set({ "n", "v" }, "<leader>ac", "<cmd>CodeCompanionChat Toggle<cr>", { desc = "AI Toggle [C]hat" })
+vim.keymap.set({ "n", "v" }, "<leader>an", "<cmd>CodeCompanionChat<cr>", { desc = "AI [N]ew Chat" })
+vim.keymap.set({ "n", "v" }, "<leader>aa", "<cmd>CodeCompanionActions<cr>", { desc = "AI [A]ction" })
+vim.keymap.set("v", "ga", "<cmd>CodeCompanionChat Add<CR>", { desc = "AI [A]dd to Chat" })
+vim.keymap.set("v", "<leader>ae", "<cmd>CodeCompanion /explain<cr>", { desc = "AI [E]xplain" })
+
 -- LazyDocker
 -- vim.keymap.set("n", "<leader>D", "<cmd>LazyDocker<CR>", { desc = "Toggle LazyDocker", noremap = true, silent = true, })

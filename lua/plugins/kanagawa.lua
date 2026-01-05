@@ -9,7 +9,7 @@ return {
         commentStyle = { italic = true },
         keywordStyle = { italic = true },
         statementStyle = { bold = true },
-        transparent = true, -- Habilita la transparencia en el tema
+        -- transparent = true, -- Habilita la transparencia en el tema
         dimInactive = true,
         terminalColors = true,
         overrides = function(colors)
@@ -27,7 +27,7 @@ return {
           }
         end,
         theme = "wave",
-        background = { dark = "wave", light = "wave" },
+        background = { dark = "dragon", light = "dragon" },
       })
       vim.cmd("colorscheme kanagawa-dragon")
     end,

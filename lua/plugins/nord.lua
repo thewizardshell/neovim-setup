@@ -10,8 +10,7 @@ return {
       vim.g.nord_borders = false -- Desactiva bordes entre ventanas divididas
       vim.g.nord_bold = true -- Desactiva negrita
 
-      -- Cargar y aplicar el tema
-      --require("nord").set()
+      -- require("nord").set()
     end,
   },
 }
