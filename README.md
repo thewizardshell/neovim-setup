@@ -1,3 +1,12 @@
+> [!CAUTION]
+> **ESTE REPOSITORIO YA NO SE ACTUALIZA / THIS REPOSITORY IS NO LONGER UPDATED**
+>
+> 🇪🇸 Esta configuración de Neovim ahora forma parte de mis **dotfiles** generales. Puedes encontrar la versión más reciente y actualizada aquí: [thewizardshell/dotfiles](https://github.com/thewizardshell/dotfiles)
+>
+> 🇺🇸 This Neovim setup is now part of my main **dotfiles**. You can find the latest and updated version here: [thewizardshell/dotfiles](https://github.com/thewizardshell/dotfiles)
+
+---
+
 ![image](https://github.com/user-attachments/assets/8d4b1de9-38e2-4ee0-b125-d0a279f71ce0)
 
 <p align="center">
@@ -6,7 +15,6 @@
 </p>
 
 # Instalación de mi configuración de Neovim en WSL Ubuntu
-Ultima Actualización : 27/07/2025
 ---
 > **🔍 Nota:** Si te interesa ver cómo he configurado mis Dotfiles, puedes revisarlos en mi [repositorio de Dotfiles](https://github.com/vicenteroa/Dotfiles). ¡Ahí encontrarás todas las configuraciones y scripts adicionales que utilizo para mi entorno de desarrollo! 🚀
 
@@ -177,3 +185,4 @@ Para más detalles sobre cómo configuro mis herramientas, puedes revisar mis [D
 
 
 ¡Listo! 🏯 ¡Disfruta de tu nuevo entorno de desarrollo y la potencia de Neovim en WSL Ubuntu!
+
